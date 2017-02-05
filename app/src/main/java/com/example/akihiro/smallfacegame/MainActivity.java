@@ -1,5 +1,6 @@
 package com.example.akihiro.smallfacegame;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -63,5 +64,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onClickCameraImage(View view) {
+        //ImageButton(When camera image click app work )
+        Intent intent = new Intent(MainActivity.this, faceViewActivity .class);
+        startActivity(intent);
     }
 }
